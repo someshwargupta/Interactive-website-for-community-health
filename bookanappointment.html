@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an appointment | Angel Hospital</title>
+    <link href="styles1.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navigation container">
+        <div class="nav-brand"><strong style="font-size: 4vh;">Angel Hospitals</strong></div>
+        <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a class="link" href="/">Home</a>
+            </li>
+            <li class="list-item-inline">
+                <a class="link" href="Doctors.html">Find Doctor</a>
+            </li>
+            <li class="list-item-inline">
+              <a class="link" href="aboutus.html">About Us</a>
+            </li>
+        </ul>
+    </nav>
+    <h2 style="text-align:center;">Book an appointment</h2>
+    <br>
+    <form method=POST action ="mailto:someshwarguptap@gmail.com"
+    enctype="text/plain" style="padding: 1rem;">
+    Name: &emsp;
+    <input type=text name=name SIZE=32 maxlength=80> 
+    <p>
+    SEX:
+    <input type=radio name=SEX value="M"> Male  
+    <input type=radio name=SEX value="F">Female
+    <p>
+    Age:&emsp;
+    <input type="number" name=age SIZE=5 maxlength="3">
+    <p>
+    Mobile No:&emsp;
+    <input type="number" name=number SIZE=11 maxlength="11">
+    <p>
+    Doctor:&emsp;
+    <select name=DOc size=1>
+    <option>Dr.Karun</option>
+    <option>Dr.Rajaram</option>
+    <option>Dr.Lincon</option>
+    </select>
+    <p>
+    Health issue:&emsp;
+    <textarea id="reason" name="reason" rows="2" cols="25">
+    </textarea>
+    <p>
+    Request appointment date:&emsp;
+    <input type="date" id="start" name="DOB" min="2021-11-13" max="2021-12-12">
+    <p>
+    Address:&emsp;
+    <textarea id="address" name="address" rows="4" cols="50">
+    </textarea>
+    <br><br>
+    <input type=submit class="btnn" style="color: white;border-radius: 0.5rem;padding: 0.5rem;">
+    </form>
+    
+    
+    
+</body>
+</html>

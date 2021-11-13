@@ -64,6 +64,7 @@ hr {
 .highlight{
     margin: 0 2px;
     padding: 0px 5px;
+    font-size: 1.2rem;
     text-decoration: none;
     color: #00A66C;
 
@@ -118,6 +119,7 @@ hr {
 }
 .hero .btn{
     position: absolute;
+    text-decoration: none;
     top: 40%;
     left: 30%;
     transform: translate(-50%,-50%);
@@ -146,14 +148,21 @@ hr {
     padding: 20px;
   }
   
+  .right{
+    float: right;
+}
+  .btnn{
+      background-color: #278E42;
+      border: none;
+      padding: 4px;
+  }
   .grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    
     font-size: 15px;
     text-align: center;
   }
   .grid-btn{
       background-color: #F2CD00;
+      text-decoration: none;
       padding: 0.5rem;
       font-size: 18px;
       border: none;
@@ -166,9 +175,11 @@ hr {
   }
 
 .ow {
-    background-color: var(--off-white);
+    background-color: #F4F5F7;
 }
-
+.grid-font{
+    color: #00A66C;
+}
 /** footer**/
 .footer {
     background-color: #101010;
@@ -198,4 +209,17 @@ hr {
 }
 .footer .button:hover{
     background-color: rgb(182, 176, 176);
+}
+.input-container{
+    float: right;
+}
+.input-container input:focus, .input-container input:active {
+    outline: none;
+}
+.input-container input {
+    width: 85%;
+}
+
+.input-container button {
+    float: right;
 }
